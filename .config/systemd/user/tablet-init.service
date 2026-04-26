@@ -1,0 +1,11 @@
+[Unit]
+Description=Tablet Auto Connect (Moonlight)
+After=sunshine.service
+Requires=sunshine.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/sab/start-tablet.sh
+
+[Install]
+WantedBy=default.target
